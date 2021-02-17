@@ -1,0 +1,591 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ /* reset ================================ */
+ * {
+   box-sizing: border-box;
+ }
+
+ html {
+   font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+   line-height: 1.7;
+   letter-spacing: 1px;
+ }
+
+ ul, li {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ a {
+   text-decoration: none;
+   color: #2d3133;
+   font-size: 14px;
+ }
+
+ h1, h2, h3, h4, h5, h6, p {
+   margin: 0;
+ }
+
+ input {
+   background-color: transparent;
+   outline-width: 0;
+ }
+
+ form input[type="submit"] {
+   border: none;
+   cursor: pointer;
+ }
+
+ /* 共通レイアウト ================================ */
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* ウィンドウ幅が0〜896pxの場合に適用するCSS(( 828 x 1792 )) */
+@media screen and ( max-width: 896px ) {
+  .index-container {
+    height: 390vh;
+  }
+
+  .index-top {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/index_top_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .index-top .logo {
+    width: 25vw;
+    padding-top: 8vh;
+  }
+
+  .index-top h1 {
+    padding-top:15vh 0px 10vh 0px;
+    margin: 0px 5%;
+    width: 90%;
+    font-size: 5.4em;
+    text-align: center;
+  }
+
+  .workout-start-btn {
+    width: 50vw;
+    height: auto;
+    left: 25vw;
+    bottom: 22vh;
+    display: inline-block;
+    position: fixed;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 2vh;
+    width: 6vw;
+    left: 47vw;
+  }
+
+  .index-whats {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-color: #24c4a3;
+  }
+
+  .header {
+    padding-top: 15%;
+    padding-bottom: 6%;
+  }
+
+  .index-whats h1 {
+    width: 86%;
+    padding-left: 7%;
+    font-size: 2.2em;
+  }
+
+  .index-whats p {
+    width: 79%;
+    padding-left: 14%;
+    font-size: 1.8em;
+  }
+
+  .index-howtouse {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(34,34,34,1.0);
+    text-align: center;
+  }
+
+  .howtouse-header {
+    width: 45vw;
+    height: auto;
+  }
+
+  .index-howtouse h2 {
+    padding-top: 3%;
+    padding-bottom: 7%;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 4.5em;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .howtouse-step {
+    position: relative;
+    display: inline-block;
+    width: 75vw;
+    height: 14%;
+    text-align: center;
+  }
+
+  .howtouse-step p {
+    font-size: 2.0em;
+  }
+
+  .howtouse-step img {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+
+  .index-about-fee {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(34,34,34,0.93);
+    text-align: center;
+  }
+
+  .about-fee-header {
+    width: 43vw;
+    height: auto;
+  }
+
+  .index-about-fee h2 {
+    margin-top: -5%;
+    font-size: 16.0em;
+    color: #24c4a3;
+  }
+
+  .index-about-fee p {
+    width: 65%;
+    margin-left: 17.5%;
+    color: #ffffff;
+    font-size: 2.0em;
+  }
+
+  .index-prefooter {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    background-image: url(/index_prefooter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .index-prefooter h1 {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    font-size: 5.5em;
+  }
+
+  .index-prefooter h1 span {
+    color: #ea0652;
+  }
+
+  .index-prefooter .scroll-up {
+    position: absolute;
+    bottom: 1vh;
+    width: 10vw;
+    left: 45vw;
+  }
+
+  .index-footer {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color: #c5c7c9;
+    text-align: center;
+  }
+
+  .index-footer p {
+    color: #222222;
+  }
+
+  .footer-contact {
+    position: relative;
+  }
+
+  .footer-copyright {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 16vh;
+  }
+
+  /*  home-select */
+  .select-header {
+    text-align: center;
+    font-size: 4.0em;
+  }
+
+  #select-container{
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: #222222;
+  }
+
+  #select-container h2 {
+    font-size: 3.3em;
+  }
+
+  .home-select-container{
+    display: block;
+    position: relative;
+    margin: 25vh auto;
+    height: auto;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .btn-circle-flat {
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 30vw;
+    height: 30vw;
+    line-height: 30vw;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s;
+  }
+
+  .btn-circle-flat:hover {
+    background: #668ad8;
+  }
+
+  #feel, #genle {
+    display: none;
+  }
+
+  .btn-circle-flatoo, .btn-circle-flatoo img {
+    display: inline-block;
+    width: 30vw;
+    height: 30vw;
+    transition: .4s;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .btn-circle-flat span {
+    font-size: 2.5em;
+  }
+
+}
+/* ウィンドウ幅が0〜479pxの場合に適用するCSS (( 414 x 896 )) */
+@media screen and ( max-width:479px ) {
+  .index-container {
+    height: 410vh;
+  }
+
+  .index-top {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/index_top_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .index-top .logo {
+    width: 25vw;
+    padding-top: 8vh;
+  }
+
+  .index-top h1 {
+    padding-top:15vh 0px 10vh 0px;
+    margin: 0px 7%;
+    width: 86%;
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+  .workout-start-btn {
+    width: 50vw;
+    height: auto;
+    left: 25vw;
+    bottom: 24vh;
+    display: inline-block;
+    position: fixed;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 2vh;
+    width: 6vw;
+    left: 47vw;
+  }
+
+  .index-whats {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-color: #24c4a3;
+  }
+
+  .header {
+    padding-top: 10%;
+    padding-bottom: 4%;
+  }
+
+  .index-whats h1 {
+    width: 86%;
+    padding-left: 7%;
+    font-size: 1.1em;
+  }
+
+  .index-whats p {
+    width: 79%;
+    padding-left: 14%;
+    font-size: 0.9em;
+  }
+
+  .index-howtouse {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(34,34,34,1.0);
+    text-align: center;
+  }
+
+  .howtouse-header {
+    width: 45vw;
+    height: auto;
+  }
+
+  .index-howtouse h2 {
+    padding-top: 3%;
+    padding-bottom: 7%;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 2.0em;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .howtouse-step {
+    position: relative;
+    display: inline-block;
+    width: 75vw;
+    height: 14%;
+    text-align: center;
+  }
+
+  .howtouse-step p {
+    font-size: 0.9em;
+  }
+
+  .howtouse-step img {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+
+  .index-about-fee {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(34,34,34,0.93);
+    text-align: center;
+  }
+
+  .about-fee-header {
+    width: 43vw;
+    height: auto;
+  }
+
+  .index-about-fee h2 {
+    margin-top: -5%;
+    font-size: 6.7em;
+    color: #24c4a3;
+  }
+
+  .index-about-fee p {
+    width: 65%;
+    margin-left: 17.5%;
+    color: #ffffff;
+    font-size: 0.9em;
+  }
+
+  .index-prefooter {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    background-image: url(/index_prefooter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .index-prefooter h1 {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    font-size: 2.4em;
+  }
+
+  .index-prefooter h1 span {
+    color: #ea0652;
+  }
+
+  .index-prefooter .scroll-up {
+    position: absolute;
+    bottom: 1vh;
+    width: 8vw;
+    left: 46vw;
+  }
+
+  .index-footer {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color: #c5c7c9;
+    text-align: center;
+  }
+
+  .index-footer p {
+    color: #222222;
+  }
+
+  .footer-contact {
+    position: relative;
+  }
+
+  .footer-copyright {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 12vh;
+  }
+
+  /*  home-select */
+  .select-header {
+    text-align: center;
+    font-size: 2.0em;
+  }
+
+  #select-container{
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: #222222;
+  }
+
+  #select-container h2 {
+    font-size: 1.3em;
+  }
+
+  .home-select-container{
+    display: block;
+    position: relative;
+    margin: 25vh auto;
+    height: auto;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .btn-circle-flat {
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 30vw;
+    height: 30vw;
+    line-height: 30vw;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s;
+  }
+
+  .btn-circle-flat:hover {
+    background: #668ad8;
+  }
+
+  #feel, #genle {
+    display: none;
+  }
+
+  .btn-circle-flatoo, .btn-circle-flatoo img {
+    display: inline-block;
+    width: 30vw;
+    height: 30vw;
+    transition: .4s;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .btn-circle-flat span {
+    font-size: 1.2em;
+  }
+}

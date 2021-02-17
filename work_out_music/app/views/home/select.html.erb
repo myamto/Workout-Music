@@ -1,0 +1,138 @@
+<div id="select-container">
+
+<%= link_to(root_path) do %>
+  <h1 class="select-header" style="animation: fadeIn 2.0s ease 0.3s 1 normal;">Workout Music</h1>
+<% end %>
+
+<div class="container home-select-container">
+<%= form_tag("/workout/index", {method: :post}) do %>
+<form>
+
+<div id="feel_or_genle" style="animation: fadeIn 2.0s ease 2.3s 1 normal;">
+  <% if @left_up == 0 then %>
+    <button class="select-btn-left-up" name="classic" value="on"><img src="/select_classic.jpg" alt="クラシック"/></button>
+  <% elsif @left_up == 1 then %>
+    <button class="select-btn-left-up" name="cafe" value="on"><img src="/select_cafe.jpg" alt="カフェ風"/></button>
+  <% else %>
+    <button class="select-btn-left-up" name="western_music" value="on"><img src="/select_western_music.jpg" alt="洋楽"/></button>
+  <% end %>
+
+  <% if @right_up == 0 then %>
+    <button class="select-btn-right-up" name="EDM" value="on"><img src="/select_EDM.jpg" alt="EDM"/></button>
+  <% elsif @right_up == 1 then %>
+    <button class="select-btn-right-up" name="jazz" value="on"><img src="/select_jazz.jpg" alt="Jazz"/></button>
+  <% else %>
+    <button class="select-btn-right-up" name="anison" value="on"><img src="/select_anison.jpg" alt="アニソン"/></button>
+  <% end %>
+
+  <% if @left_bottom == 0 then %>
+    <button class="select-btn-left-bottom" name="wahu" value="on"><img src="/select_wahu.jpg" alt="和風"/></button>
+  <% elsif @left_bottom == 1 then %>
+    <button class="select-btn-left-bottom" name="f1yuragi" value="on"><img src="/select_f1yuragi.jpg" alt="1/fゆらぎ"/></button>
+  <% else %>
+    <button class="select-btn-left-bottom" name="celtic" value="on"><img src="/select_celtic.jpg" alt="ケルト風"/></button>
+  <% end %>
+
+  <% if @right_bottom == 0 then %>
+    <button class="select-btn-right-bottom" name="enviornment" value="on"><img src="/select_enviornment.jpg" alt="環境音"/></button>
+  <% else %>
+    <button class="select-btn-right-bottom" name="jpop" value="on"><img src="/select_jpop.jpg" alt="J-POP"/></button>
+  <% end %>
+
+</div>
+
+</form>
+<% end %>
+</div>
+
+<p class="home-select-derection">テーマを選択してください</p>
+
+<%= form_tag("/select", {method: :get}) do %>
+<form>
+<button class="shuffle-btn" name="shuffle_btn" value="on"><img src="/shuffle_btn.png" alt="シャッフル"/></button>
+</form>
+<% end %>
+</div>
+
+<script>
+function select_feel(){
+	const f_o_g = document.getElementById("feel_or_genle");
+  const f = document.getElementById("feel");
+  if(f_o_g.style.display != "none") {
+	  f_o_g.style.display ="none";
+    f.style.display ="block";
+  }
+}
+
+function select_genle(){
+	const f_o_g = document.getElementById("feel_or_genle");
+  const g = document.getElementById("genle");
+  if(f_o_g.style.display != "none") {
+	  f_o_g.style.display ="none";
+    g.style.display ="block";
+  }
+}
+
+function norinori_over(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "transparent";
+  s_c.style.backgroundImage = "url(/norinori.jpg)";
+  console.log("over");
+}
+
+function norinori_leave(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "#222222";
+  s_c.style.backgroundImage = "none";
+  console.log("leave");
+}
+
+function shittori_over(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "transparent";
+  s_c.style.backgroundImage = "url(/shittori.jpg)";
+  console.log("over");
+}
+
+function shittori_leave(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "#222222";
+  s_c.style.backgroundImage = "none";
+  console.log("leave");
+}
+
+function classic_over(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "transparent";
+  s_c.style.backgroundImage = "url(/classic.jpg)";
+  console.log("over");
+}
+
+function classic_leave(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "#222222";
+  s_c.style.backgroundImage = "none";
+  console.log("leave");
+}
+
+function jpop_over(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "transparent";
+  s_c.style.backgroundImage = "url(/jpop.jpg)";
+  console.log("over");
+}
+
+function jpop_leave(){
+  const s_c = document.getElementById("select-container");
+  s_c.style.backgroundColor = "#222222";
+  s_c.style.backgroundImage = "none";
+  console.log("leave");
+}
+
+function init(){
+	const f_o_g = document.getElementById("feel_or_genle");
+	f_o_g.animate([{opacity: '0'}, {opacity: '1'}], 3000);
+}
+
+window.onload = init;
+</script>

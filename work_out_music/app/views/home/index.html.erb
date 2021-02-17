@@ -1,0 +1,66 @@
+<div class="index-container">
+
+<div class="index-top">
+	<img src="/workout_music_logo.png" class="logo">
+	<h1>2クリックで作業に超集中しよう</h1>
+	<%= link_to(image_tag('/cta.png', class: "workout-start-btn"), "/select") %>
+	<img src="/scroll_down.png" class="scroll-down" onclick="scrollDown()">
+</div>
+<div class="index-whats">
+	<h1 class="header">Workout Musicとは2クリックで気分に合った曲がかかり始める</br>
+		  「作業用BGMプレーヤー」です。</h1>
+	<p>1. カフェみたいに素敵なBGMに包まれながら作業することで</br>
+		 集中力を上げ、生産性を向上させましょう。</br>
+		 </br>
+		 2. ユーザー登録不要で始められるため、今すぐに作業に取り掛かる</br>
+		 ことができます。
+</div>
+<div class="index-howtouse">
+  <img src="/howtouse_header.png" class="howtouse-header header">
+	<h2>２クリックで開始。</br>
+		今の気分に合わせ直感で選ぼう。
+	</h2>
+	<div class="howtouse-step">
+		<img class="" src="/step1.jpg">
+		<!--
+		<p>STEP１：気分かジャンルを選択しよう</p>
+		<img src="/select_norinori_btn.png" class="">
+		<img src="/select_shittori_btn.png" class="">
+		-->
+	</div>
+	</br>
+	<div class="howtouse-step">
+		<img class="" src="/step2.jpg">
+		<!--
+		<p>STEP２：好きな方を選択しよう</p>
+		<img src="/select_classic_btn.png" class="">
+		<img src="/select_jpop_btn.png" class="">
+		-->
+	</div>
+	<h2>さあ、作業に超集中しよう。</h2>
+</div>
+<div class="index-about-fee">
+	<img src="/about_fee_header.png" class="about-fee-header header">
+		<h2>¥０</h2>
+		<p>当サービスの利用によってサービス使用料を請求されることは一切ありません。</p>
+</div>
+<div class="index-prefooter">
+	<h1>もう作業用BGMで悩む必要なし<span>!!</span></h1>
+	<%= link_to(image_tag('/cta.png', class: "workout-start-btn"), "/select") %>
+	<img src="/scroll_up.png" class="scroll-up" onclick="scrollUp()">
+</div>
+<div class="index-footer">
+	<p class="footer-contact">Contact: ctrllplusz@gmail.com</p>
+	<p class="footer-copyright">©️ 2020 myamto</p>
+</div>
+
+</div>
+<script>
+	function scrollDown() {
+		scrollTo(0, window.innerHeight);
+	}
+
+	function scrollUp() {
+		scrollTo(0, 0);
+	}
+</script>

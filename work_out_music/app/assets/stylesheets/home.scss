@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body, html{
+  height: auto;
+  background: #ffffff;
+  font-family: 'Lato', sans-serif;
+}
+
+.home-container {
+
+}
+
+h1, h2, p {
+    color: #ffffff;
+}
+
+.how_to_use {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#how_box {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.explain_box {
+  position: relative;
+  width: 30%;
+  height: auto;
+  background-color: white;
+}
+
+/*  home-index */
+.index-container {
+  height: 550vh;
+}
+
+.index-top {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/index_top_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.index-top .logo {
+  width: 8vw;
+  padding-top: 8vh;
+}
+
+.index-top h1 {
+  padding-top:15vh;
+  padding-bottom:10vh;
+  font-size: 3.8em;
+}
+
+.workout-start-btn {
+  width: 27vw;
+  height: auto;
+  padding: 0;
+  display: inline-block;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2vh;
+  width: 2.5vw;
+  left: 48.75vw;
+}
+
+.index-whats {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-color: #24c4a3;
+}
+
+.header {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.index-whats h1 {
+  padding-left: 5%;
+  font-size: 2.2em;
+}
+
+.index-whats p {
+  padding-left: 10%;
+  font-size: 1.8em;
+}
+
+.index-howtouse {
+  position: relative;
+  height: 180vh;
+  width: 100%;
+  background-color: rgba(34,34,34,1.0);
+  text-align: center;
+}
+
+.howtouse-header {
+  width: 30vw;
+  height: auto;
+}
+
+.index-howtouse h2 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 4.8em;
+  line-height: 110%;
+}
+
+.howtouse-step {
+  position: relative;
+  display: inline-block;
+  width: 50vw;
+  height: 25%;
+  text-align: center;
+}
+
+.howtouse-step p {
+  font-size: 1.8em;
+}
+
+.howtouse-step img {
+  display: inline-block;
+  width: 100%;
+  padding-top: 3%;
+}
+
+.index-about-fee {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(34,34,34,0.93);
+  text-align: center;
+}
+
+.about-fee-header {
+  width: 28vw;
+  height: auto;
+}
+
+.index-about-fee h2 {
+  margin-top: -5%;
+  font-size: 12.0em;
+  color: #24c4a3;
+}
+
+.index-about-fee p {
+  color: #ffffff;
+  font-size: 1.8em;
+  margin-top: -2%;
+}
+
+.index-prefooter {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url(/index_prefooter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.index-prefooter h1 {
+  padding-top: 30vh;
+  padding-bottom: 20vh;
+  font-size: 4.8em;
+}
+
+.index-prefooter h1 span {
+  color: #ea0652;
+}
+
+.index-prefooter .scroll-up {
+  position: absolute;
+  bottom: 1vh;
+  width: 3vw;
+  left: 48.5vw;
+}
+
+.index-footer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-color: #c5c7c9;
+}
+
+.index-footer p {
+  color: #222222;
+}
+
+.footer-contact {
+  position: absolute;
+  top: 8vh;
+  left: 2vw;
+}
+
+.footer-copyright {
+  position: absolute;
+  left: 47vw;
+  bottom: 1vh;
+}
+
+/*  home-select */
+
+#select-container{
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #222222;
+}
+
+.select-header {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.home-select-container{
+  display: block;
+  position: relative;
+  margin: 0;
+  height: 80vh;
+  width: 100vw;
+}
+
+.container ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.btn-circle-flat {
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 10vw;
+  height: 10vw;
+  line-height: 10vw;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.btn-circle-flat:hover {
+  background: #668ad8;
+}
+
+#feel, #genle {
+  display: none;
+}
+
+.btn-circle-flatoo, .btn-circle-flatoo img {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  transition: .4s;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+.select-btn-left-up, .select-btn-left-up img {
+  display: inline-block;
+  width: 49vw;
+  height: 40vh;
+  border: none;
+  background: transparent;
+}
+
+.select-btn-right-up, .select-btn-right-up img {
+  display: inline-block;
+  width: 49vw;
+  height: 40vh;
+  border: none;
+  background: transparent;
+}
+
+.select-btn-left-bottom, .select-btn-left-bottom img {
+  display: inline-block;
+  width: 49vw;
+  height: 40vh;
+  border: none;
+  background: transparent;
+}
+
+.select-btn-right-bottom, .select-btn-right-bottom img {
+  display: inline-block;
+  width: 49vw;
+  height: 40vh;
+  border: none;
+  background: transparent;
+}
+
+.home-select-derection {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.shuffle-btn,  .shuffle-btn img{
+  border: none;
+  background: transparent;
+  position: fixed;
+  width: 8vw;
+  height: 8vw;
+  right: 1vw;
+  bottom: 2vw;
+}
