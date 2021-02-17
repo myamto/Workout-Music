@@ -5,6 +5,11 @@ end
 
 class HomeController < ApplicationController
   def select
+    #　sessionの初期化
+    session[:ref] = nil
+    session[:select] = nil
+    session[:query] = nil
+
     @left_up = rand(0..2)
     @right_up = rand(0..2)
     @left_bottom = rand(0..2)

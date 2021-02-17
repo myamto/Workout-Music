@@ -89,6 +89,17 @@ class WorkoutController < ApplicationController
       end
     end
 
+
+    #  リロードした際のエラー回避処理
+    if request.path_info != session[:ref]
+      session[:ref] = request.path_info
+      session[:select] = @select
+      session[:query] = @query
+    else
+      @select = session[:select]
+      @query = session[:query]
+    end
+
     def find_videos(keyword, after: 1.months.ago, before: Time.now)
       service = Google::Apis::YoutubeV3::YouTubeService.new
       service.key = "AIzaSyBIP_58_TllqLH8FMEYZUqBCiEcDAO8-ZY"
@@ -100,6 +111,7 @@ class WorkoutController < ApplicationController
         type: 'video',
         max_results: 5,
         published_after: 1.years.ago.iso8601,
+        video_embeddable: 'true',
       }
       results = service.list_searches(:id, opt)
       results.items.each do |item|

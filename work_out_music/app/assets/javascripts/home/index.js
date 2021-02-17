@@ -16,4 +16,3 @@
 //= require_tree .
 
 require ('home/select')
-require ('workout/index')

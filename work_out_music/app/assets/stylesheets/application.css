@@ -275,7 +275,7 @@ body {
   .home-select-container{
     display: block;
     position: relative;
-    margin: 25vh auto;
+    margin: 0px;
     height: auto;
     width: 70vw;
     text-align: center;
@@ -288,41 +288,61 @@ body {
     overflow: auto;
   }
 
-  .btn-circle-flat {
-    display: inline-block;
-    text-decoration: none;
-    background: #87befd;
-    color: #FFF;
-    width: 30vw;
-    height: 30vw;
-    line-height: 30vw;
-    border-radius: 50%;
-    text-align: center;
-    overflow: hidden;
-    transition: .4s;
-  }
-
-  .btn-circle-flat:hover {
-    background: #668ad8;
-  }
-
   #feel, #genle {
     display: none;
   }
 
-  .btn-circle-flatoo, .btn-circle-flatoo img {
+  .select-btn-left-up, .select-btn-left-up img {
     display: inline-block;
-    width: 30vw;
-    height: 30vw;
-    transition: .4s;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: auto;
     border: none;
     background: transparent;
   }
 
-  .btn-circle-flat span {
+  .select-btn-right-up, .select-btn-right-up img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    border: none;
+    background: transparent;
+  }
+
+  .select-btn-left-bottom, .select-btn-left-bottom img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    border: none;
+    background: transparent;
+  }
+
+  .select-btn-right-bottom, .select-btn-right-bottom img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    border: none;
+    background: transparent;
+  }
+
+  .home-select-derection {
+    position: fixed;
     font-size: 2.5em;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(34,34,34,1.0);
+    z-index: 99;
+    bottom: 0px;
+  }
+
+  .shuffle-btn,  .shuffle-btn img{
+    border: none;
+    background: transparent;
+    position: fixed;
+    width: 18vw;
+    height: 18vw;
+    right: 1vw;
+    bottom: 2vw;
+    z-index: 999;
   }
 
 }
@@ -539,7 +559,7 @@ body {
   .home-select-container{
     display: block;
     position: relative;
-    margin: 25vh auto;
+    margin: 0px;
     height: auto;
     width: 70vw;
     text-align: center;
@@ -552,40 +572,61 @@ body {
     overflow: auto;
   }
 
-  .btn-circle-flat {
-    display: inline-block;
-    text-decoration: none;
-    background: #87befd;
-    color: #FFF;
-    width: 30vw;
-    height: 30vw;
-    line-height: 30vw;
-    border-radius: 50%;
-    text-align: center;
-    overflow: hidden;
-    transition: .4s;
-  }
-
-  .btn-circle-flat:hover {
-    background: #668ad8;
-  }
-
   #feel, #genle {
     display: none;
   }
 
-  .btn-circle-flatoo, .btn-circle-flatoo img {
+  .select-btn-left-up, .select-btn-left-up img {
     display: inline-block;
-    width: 30vw;
-    height: 30vw;
-    transition: .4s;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: auto;
     border: none;
     background: transparent;
   }
 
-  .btn-circle-flat span {
-    font-size: 1.2em;
+  .select-btn-right-up, .select-btn-right-up img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    border: none;
+    background: transparent;
   }
+
+  .select-btn-left-bottom, .select-btn-left-bottom img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    border: none;
+    background: transparent;
+  }
+
+  .select-btn-right-bottom, .select-btn-right-bottom img {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    border: none;
+    background: transparent;
+  }
+
+  .home-select-derection {
+    position: fixed;
+    font-size: 1.3em;
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(34,34,34,1.0);
+    z-index: 99;
+    bottom: 0px;
+  }
+
+  .shuffle-btn,  .shuffle-btn img{
+    border: none;
+    background: transparent;
+    position: fixed;
+    width: 20vw;
+    height: 20vw;
+    right: 2vw;
+    bottom: 4vw;
+    z-index: 999;
+  }
+
 }
