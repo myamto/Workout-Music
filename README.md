@@ -6,11 +6,11 @@ Workout Music
 1クリックで解決。作業用BGMプレーヤー。
 
 # 関連画像（あれば）
-https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/99eb76bdfea35e290e6942469706243a/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.45.34.png
+![lp](https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/99eb76bdfea35e290e6942469706243a/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.45.34.png)
 
-https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/77b8e7c1092e5d37dff2e895222e593f/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.45.55.png
+![select](https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/77b8e7c1092e5d37dff2e895222e593f/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.45.55.png)
 
-https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/4cf6c914b189cbfa346a6673530178ed/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.46.27.png
+![player](https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/4cf6c914b189cbfa346a6673530178ed/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.46.27.png)
 
 # 使用言語、環境、フレームワークなど
 ruby 2.6.5
