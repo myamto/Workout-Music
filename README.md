@@ -14,7 +14,7 @@ Workout Music
 
 ![player](https://repo.fenrir-inc.com/intern20w/xmasatox112230x/uploads/4cf6c914b189cbfa346a6673530178ed/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2021-02-18_13.46.27.png)
 
-# 使用言語、環境、フレームワークなど
+# 使用言語、環境、フレームワーク
 ruby 2.6.5  
 macOS  
 Rails 5.2.4.4  
