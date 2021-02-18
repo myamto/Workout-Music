@@ -10,6 +10,7 @@ class HomeController < ApplicationController
     session[:select] = nil
     session[:query] = nil
 
+    #　11個のテーマからランダムに4つを決定する
     @left_up = rand(0..2)
     @right_up = rand(0..2)
     @left_bottom = rand(0..2)

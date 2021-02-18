@@ -1,7 +1,6 @@
 """
 youtube API
 google project api key: AIzaSyBAKEUyIk556xZMP4aDBW3R505lB98h4EA,  AIzaSyBzH4GZ3v-Ujj_nE0skh27MRNJhi1-hK5U, AIzaSyBIP_58_TllqLH8FMEYZUqBCiEcDAO8-ZY
-３つのアカウントでローテーション
 
 """
 require 'google/apis/youtube_v3'
@@ -9,10 +8,9 @@ require 'active_support/all'
 
 class WorkoutController < ApplicationController
   def index
-    puts "=========================================="
-    puts params
+    #　change_music_btnによって同じテーマでの曲変更が行われた時の処理
+    # :themeはchange_music_btnが押される時に選択されていたテーマ
     if params[:theme]
-      puts "theme:" + params[:theme]
       @select = params[:theme]
       if @select == "classic"
         @query = "作業用bgm クラシック"
@@ -38,6 +36,7 @@ class WorkoutController < ApplicationController
         @query = "作業用bgm J-POP"
       end
     else
+      #　home#selectからテーマが選択された時の処理
       @classic = params[:classic]
       @cafe = params[:cafe]
       @western_music = params[:western_music]
@@ -50,7 +49,7 @@ class WorkoutController < ApplicationController
       @enviornment = params[:enviornment]
       @jpop = params[:jpop]
 
-
+      #　テーマからAPIに送るクエリを定義
       if @classic == "on"
         @select = "classic"
         @query = "作業用bgm クラシック"
@@ -100,6 +99,8 @@ class WorkoutController < ApplicationController
       @query = session[:query]
     end
 
+    #　keywordを指定してAPIにより動画を検索する
+    #　返り血は動画のIDが5つ格納された配列
     def find_videos(keyword, after: 1.months.ago, before: Time.now)
       service = Google::Apis::YoutubeV3::YouTubeService.new
       service.key = "AIzaSyBIP_58_TllqLH8FMEYZUqBCiEcDAO8-ZY"
@@ -122,9 +123,12 @@ class WorkoutController < ApplicationController
       return video_ids
     end
 
+    #　定義したクエリを使って検索
     @ids = find_videos(@query)
 
+    #　5つの動画のIDからランダムに一つを選択
     @video_id = @ids[rand(0..4)]
+    #　workout#indexで出漁する背景画像を定義
     @bgimage = "/" + @select + ".jpg"
   end
 end

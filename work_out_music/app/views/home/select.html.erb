@@ -8,7 +8,9 @@
 <%= form_tag("/workout/index", {method: :post}) do %>
 <form>
 
+<!-- テーマの候補を出力する（全11個の中からランダムで4つ、乱数はworkout_controllerであらかじめ設定する） -->
 <div id="feel_or_genle" style="animation: fadeIn 2.0s ease 2.3s 1 normal;">
+  <!- 0 <= @left_up <= 2 ->
   <% if @left_up == 0 then %>
     <button class="select-btn-left-up" name="classic" value="on"><img src="/select_classic.jpg" alt="クラシック"/></button>
   <% elsif @left_up == 1 then %>
@@ -17,6 +19,7 @@
     <button class="select-btn-left-up" name="western_music" value="on"><img src="/select_western_music.jpg" alt="洋楽"/></button>
   <% end %>
 
+  <!-- 0 <= @right_up <= 2 -->
   <% if @right_up == 0 then %>
     <button class="select-btn-right-up" name="EDM" value="on"><img src="/select_EDM.jpg" alt="EDM"/></button>
   <% elsif @right_up == 1 then %>
@@ -25,6 +28,7 @@
     <button class="select-btn-right-up" name="anison" value="on"><img src="/select_anison.jpg" alt="アニソン"/></button>
   <% end %>
 
+  <!-- 0 <= @left_bottom <= 2 -->
   <% if @left_bottom == 0 then %>
     <button class="select-btn-left-bottom" name="wahu" value="on"><img src="/select_wahu.jpg" alt="和風"/></button>
   <% elsif @left_bottom == 1 then %>
@@ -33,6 +37,7 @@
     <button class="select-btn-left-bottom" name="celtic" value="on"><img src="/select_celtic.jpg" alt="ケルト風"/></button>
   <% end %>
 
+  <!-- 0 <= @right_bottom <= 1 -->
   <% if @right_bottom == 0 then %>
     <button class="select-btn-right-bottom" name="enviornment" value="on"><img src="/select_enviornment.jpg" alt="環境音"/></button>
   <% else %>

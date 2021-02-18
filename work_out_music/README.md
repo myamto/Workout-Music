@@ -32,6 +32,7 @@ Unnecessary
 (7)Access "localhost:3000" using your browser.
 
 * Services (job queues, cache servers, search engines, etc.)
+BGM player
 
 * Deployment instructions
 (1)Install Zip file.
