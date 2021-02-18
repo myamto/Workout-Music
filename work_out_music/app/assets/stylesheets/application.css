@@ -158,8 +158,8 @@ body {
   .howtouse-step {
     position: relative;
     display: inline-block;
-    width: 75vw;
-    height: 14%;
+    width: 90vw;
+    height: auto;
     text-align: center;
   }
 
@@ -441,8 +441,8 @@ body {
   .howtouse-step {
     position: relative;
     display: inline-block;
-    width: 75vw;
-    height: 14%;
+    width: 90vw;
+    height: auto;
     text-align: center;
   }
 
